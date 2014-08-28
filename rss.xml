@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 28 Aug 2014 10:09:18 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_7">환영합니다.</h3>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 28 Aug 2014 10:30:36 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[start haroo]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><p>write here!</p>
+<h1 id="toc_5">하루프레스 시작!</h1>
+<p>하루프레스를 설치했다. 블로깅을 시작한다.</p>]]></description><link>http://withfpp.github.com/post/start-haroo</link><guid isPermaLink="false">start-haroo</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Thu, 28 Aug 2014 10:19:00 GMT</pubDate></item><item><title><![CDATA[하루프레스 첫 게시글]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><h1 id="toc_2">하루프레스를 시작!</h1>
+<p>하루프레스로 블로깅을 시작한다. 
+javascript 기반으로 정적 콘텐츠를 깃허브를 이용해 배포하는 점이 매우 매력적이다. 하루패드에 대해서는 오래전부터 들어왔지만, 우연히 하루프레스를 이용해 양질의 콘텐츠를 발행하는 블로그를 만나게 되었다. <br></p>
+<p>차근차근 지식을 정리할 수 있도록, 잘 활용해 보도록 해야겠다.</p>
+
+<h2 id="toc_3">땡큐</h2>
+<p>하루프레스를 개발자님께 존경을 표하고싶다. 정말 멋지다!</p>]]></description><link>http://withfpp.github.com/post/harupeureseu-ceos-gesigeul</link><guid isPermaLink="false">harupeureseu-ceos-gesigeul</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Thu, 28 Aug 2014 09:53:00 GMT</pubDate></item><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_13">환영합니다.</h3>
 
 <ul>
 <li>Welcome</li>
@@ -13,9 +21,9 @@
 <li>добро пожаловать</li>
 </ul>
 
-<h3 id="toc_8">Intro</h3>
+<h3 id="toc_14">Intro</h3>
 <p>하루프레스는 하루의 이야기를 블로깅하기 위한 정적 페이지 블로그 엔진입니다.</p>
-<h3 id="toc_9">Haroopress?</h3>
+<h3 id="toc_15">Haroopress?</h3>
 
 <ul>
 <li><a href="http://haroopress.com/about/">하루프레스?</a></li>
@@ -24,7 +32,7 @@
 <li><a href="http://haroopress.com/diary">하루프레스 개발 다이어리</a></li>
 </ul>
 
-<h3 id="toc_10">Usage</h3>
+<h3 id="toc_16">Usage</h3>
 
 <ul>
 <li><a href="http://haroopress.com/post/haroopress-install-guide-movie/">5분만에 설치하는 하루프레스 동영상</a></li>
@@ -35,7 +43,7 @@
 <li><a href="http://haroopress.com/post/harupeureseu-hwangyeongseoljeong-hagi/">하루프레스 환경설정 하기</a></li>
 </ul>
 
-<h3 id="toc_11">History</h3>
+<h3 id="toc_17">History</h3>
 
 <ul>
 <li><a href="https://github.com/rhiokim/haroopress/wiki/Change-History">변경 이력</a></li>
