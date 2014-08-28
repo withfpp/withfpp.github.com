@@ -8,3 +8,7 @@
 	width: 100px;
 	margin-left: 10px;
 }
+
+li.thumbnail img {
+	display: none;
+}
