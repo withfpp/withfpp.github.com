@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 28 Aug 2014 10:38:36 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_7">환영합니다.</h3>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 28 Aug 2014 13:02:07 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[CSS 핵심1 ( CSS essential 1)]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><h1 id="toc_9">CSS, 핵심을 정리해보자.</h1>
+
+<h2 id="toc_10">block VS Inline</h2>
+<p>block 요소 : 전체 공간(너비)을 다 차지한다. </p>
+<blockquote>
+<p>div,p,form,section,header,footer...</p></blockquote>
+<p>inline 요소 : 자신의 공간 만큼만 차지한다.</p>
+<blockquote>
+<p>span, a ...</p></blockquote>
+<p>inline 요소에 margin을 넣고 싶다면, inline-block 으로 바꾸어 주어야 한다.</p><p>&quot;아니 똑같은 건데 여긴 되는데 여긴 안돼?&quot; 라는 종류의 문제에 닥쳤을 때 많은 경우 블록 요소와 인라인 요소를 구분하지 못해서 생기는 일이 많다는 점을 떠올리면 문제가 의외로 빨리 해결될지도 모른다.</p>
+<h2 id="toc_11">float 을 하면 무너져요</h2>
+<p>block 속성인 div 안에 자식 요소가 float 속성을 갖게 되면 레이아웃이 망가진다.
+clear:both 에 대해 반드시 알아두어야 한다. </p>
+<h2 id="toc_12">position 개념</h2>
+<pre><code class=""><span class="literal">-</span> <span class="comment">static</span>
+<span class="literal">-</span> <span class="comment">relative</span>
+<span class="literal">-</span> <span class="comment">absolute</span>
+<span class="literal">-</span> <span class="comment">fixed</span>
+</code></pre><p>기본은 static이다. 아무것도 설정하지 않았다면 static 이다. </p>]]></description><link>http://withfpp.github.com/post/css-haegsim1-css-essential-1)</link><guid isPermaLink="false">css-haegsim1-css-essential-1)</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Thu, 28 Aug 2014 11:20:00 GMT</pubDate></item><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_20">환영합니다.</h3>
 
 <ul>
 <li>Welcome</li>
@@ -13,9 +31,9 @@
 <li>добро пожаловать</li>
 </ul>
 
-<h3 id="toc_8">Intro</h3>
+<h3 id="toc_21">Intro</h3>
 <p>하루프레스는 하루의 이야기를 블로깅하기 위한 정적 페이지 블로그 엔진입니다.</p>
-<h3 id="toc_9">Haroopress?</h3>
+<h3 id="toc_22">Haroopress?</h3>
 
 <ul>
 <li><a href="http://haroopress.com/about/">하루프레스?</a></li>
@@ -24,7 +42,7 @@
 <li><a href="http://haroopress.com/diary">하루프레스 개발 다이어리</a></li>
 </ul>
 
-<h3 id="toc_10">Usage</h3>
+<h3 id="toc_23">Usage</h3>
 
 <ul>
 <li><a href="http://haroopress.com/post/haroopress-install-guide-movie/">5분만에 설치하는 하루프레스 동영상</a></li>
@@ -35,7 +53,7 @@
 <li><a href="http://haroopress.com/post/harupeureseu-hwangyeongseoljeong-hagi/">하루프레스 환경설정 하기</a></li>
 </ul>
 
-<h3 id="toc_11">History</h3>
+<h3 id="toc_24">History</h3>
 
 <ul>
 <li><a href="https://github.com/rhiokim/haroopress/wiki/Change-History">변경 이력</a></li>
