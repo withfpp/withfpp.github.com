@@ -93,6 +93,8 @@
                     
                     <li><a href="/category/css"><i class="icon-book"></i> css</a></li>
                     
+                    <li><a href="/category/js"><i class="icon-book"></i> js</a></li>
+                    
                 </ul>
             </div>
 
@@ -104,23 +106,23 @@
         <h6>contributors</h6>
         
         <div class="row-fluid">
-            <a class="pull-left" href="/authors/Leon Taeho Kim" title="undefined">
-                <img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&amp;s=128.jpg&amp;d=identicon" />
-            </a>
-            <p>
-                <strong>Leon Taeho Kim</strong><br/>
-                <a href="https://twitter.com//" target="_blank">@</a>
-            </p>
-        </div>
-        <hr>
-        
-        <div class="row-fluid">
             <a class="pull-left" href="/authors/haroopress" title="undefined">
                 <img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&amp;s=128.jpg&amp;d=identicon" />
             </a>
             <p>
                 <strong>haroopress</strong><br/>
                 <a href="https://twitter.com//haroopress" target="_blank">@haroopress</a>
+            </p>
+        </div>
+        <hr>
+        
+        <div class="row-fluid">
+            <a class="pull-left" href="/authors/Leon Taeho Kim" title="undefined">
+                <img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&amp;s=128.jpg&amp;d=identicon" />
+            </a>
+            <p>
+                <strong>Leon Taeho Kim</strong><br/>
+                <a href="https://twitter.com//" target="_blank">@</a>
             </p>
         </div>
         <hr>
@@ -207,6 +209,60 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
             </div>
             
             <div class="well">
+                
+                <div class="page-header">
+                    <h1><a href="/post/jabaseukeuribteu-neombeo-javascript-number)">자바스크립트 기본 - javascript basic</a></h1>
+                    <span class="pull-right">Saturday, August 2 2014 10:14 PM</span>
+                </div>
+                <div class="pull-right">
+                    <ul class="thumbnails">
+                        <li class="thumbnail">
+                            <img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&amp;s=128.jpg&amp;d=identicon"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="markdown-wrapper">
+                    <p>Javascript 배우기 좋은 소스들</p>
+<ul>
+<li><a href="http://www.w3schools.com/js/">http://www.w3schools.com/js/</a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">https://developer.mozilla.org/ko/docs/Web/JavaScript</a></li>
+<li><a href="http://bonsaiden.github.io/JavaScript-Garden/ko/">http://bonsaiden.github.io/JavaScript-Garden/ko/</a></li>
+<li><a href="http://pineapple.io/resources/tagged/javascript?sort=most_favorited">http://pineapple.io/resources/tagged/javascript?sort=most_favorited</a></li>
+</ul>
+<p>자바스크립트를 큰 그림으로 한 번에 볼 수 있도록 정리해보고 싶었다. 위를 비롯해 여러가지 소스를 활용해 포스팅한다. 계속 업데이트 에정...</p>
+<h3 id="toc_30">탄탄한 기초를 위하여</h3>
+
+<h5 id="toc_31">1.프로토타입 이용하기</h5>
+<p>프로토타입을 이용해서 메소드를 확장한다.</p>
+<ul>
+<li>prototype, String, for</li>
+</ul>
+<pre><code class="js">var s = <span class="string">'I am leon'</span>;
+<span class="transposed_variable">String.</span><span class="transposed_variable">prototype.</span>reversed = <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+    var r = <span class="string">''</span>;
+    <span class="keyword">for</span>(var <span class="built_in">i</span> = <span class="transposed_variable">this.</span><span class="built_in">length</span> -<span class="number">1</span>; <span class="built_in">i</span> &gt;= <span class="number">0</span> ; <span class="built_in">i</span>--)<span class="cell">{
+        r += this[i];    
+    }</span>
+    <span class="keyword">return</span> r;
+}
+s = <span class="transposed_variable">s.</span>reversed();
+alert(s);
+</code></pre>
+<h5 id="toc_32">2.내장함수 이용하기</h5>
+<p>자바스크립트는 함수 안에 함수를 허용한다. 전역환경에 너무 많은 함수를 보관하지 않을 수 있어 유지면에서 깔끔하다. 내장함수는 부모함수의 변수들을 공유한다.</p>
+<ul>
+<li>parseInt()</li>
+</ul>
+
+                </div>
+                <hr/>
+                <a class="pull-right" href="/post/jabaseukeuribteu-neombeo-javascript-number)#disqus_thread"></a>
+                <p>
+                    <a href="/post/jabaseukeuribteu-neombeo-javascript-number)" class="btn btn-info">Read more...</a>
+                </p>
+            </div>
+            
+            <div class="well">
                 <div class="pull-right bookmark"></div>
                 <div class="page-header">
                     <h1><a href="/post/welcome-to-haroopress">Welcome to haroopress</a></h1>
@@ -220,7 +276,7 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
                     </ul>
                 </div>
                 <div class="markdown-wrapper">
-                    <h3 id="toc_20">환영합니다.</h3>
+                    <h3 id="toc_40">환영합니다.</h3>
 
 <ul>
 <li>Welcome</li>
@@ -234,9 +290,9 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
 <li>добро пожаловать</li>
 </ul>
 
-<h3 id="toc_21">Intro</h3>
+<h3 id="toc_41">Intro</h3>
 <p>하루프레스는 하루의 이야기를 블로깅하기 위한 정적 페이지 블로그 엔진입니다.</p>
-<h3 id="toc_22">Haroopress?</h3>
+<h3 id="toc_42">Haroopress?</h3>
 
 <ul>
 <li><a href="http://haroopress.com/about/">하루프레스?</a></li>
@@ -245,7 +301,7 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
 <li><a href="http://haroopress.com/diary">하루프레스 개발 다이어리</a></li>
 </ul>
 
-<h3 id="toc_23">Usage</h3>
+<h3 id="toc_43">Usage</h3>
 
 <ul>
 <li><a href="http://haroopress.com/post/haroopress-install-guide-movie/">5분만에 설치하는 하루프레스 동영상</a></li>
@@ -256,7 +312,7 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
 <li><a href="http://haroopress.com/post/harupeureseu-hwangyeongseoljeong-hagi/">하루프레스 환경설정 하기</a></li>
 </ul>
 
-<h3 id="toc_24">History</h3>
+<h3 id="toc_44">History</h3>
 
 <ul>
 <li><a href="https://github.com/rhiokim/haroopress/wiki/Change-History">변경 이력</a></li>
