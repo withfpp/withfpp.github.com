@@ -210,7 +210,13 @@
 <p>Dog 과 Person 의 greeting 함수는 같은 함수이다. 이 두 함수는 메모리상의 같은 객체를 참조한다. 하지만 어디서 불렸는지에 따라 this 의 값이 변할 수 있다. 기본적으로 함수호출시 . 앞에 있는 객체가, 함수에서 this 가 된다. Dog.greeting() 에서는 this 가 Dog 이고, Person.greeting() 에서는 Person 이다. == . == 앞에 아무것도 없을 때에는 글로벌 객체가 this 가 된다.</p><p>var 는 단순히 어떤 변수가 어떤 scope에 속하는지를 나타내는 키워드이다.
 예제를 직접 만들어보았다. 
 이것만 헷갈리지 않는다면 변수로 고생하는 일은 없을것 같다.
-호이스팅은 변수 선언을 올릴 뿐, 할당은 호이스팅과 관련이 없다.</p><p>@<a href="http://jsbin.com/yeyona/1/edit?js,console"></a></p><p>this가 길을 잃는 과정을 살펴본다.</p><p>@<a href="http://jsbin.com/vofeto/1/edit?js,console,output"></a></p>
+호이스팅은 변수 선언을 올릴 뿐, 할당은 호이스팅과 관련이 없다.</p><p>@<a href="http://jsbin.com/yeyona/1/edit?js,console"></a></p><p>기본 this 규칙을 먼저 살펴보자.
+1. 기본적으로 this는 전역 객체를 참조한다.
+2. 메소드 내부의 this는 해당 메소드를 호출한 부모 객체를 참조한다.
+3. 생성자 함수 코드 내부의 this는 새로 생성된 객체를 참조한다.
+4. call()과 apply() 메소드로 함수를 호출할 때, 함수의 this는 첫 번째 인자로 넘겨받은 객체를 참조한다.
+5. 프로토타입 객체 메소드 내부의 this도 해당 메소드를 호출한 부모 객체를 참조한다.
+6. JavaScript의 this 키워드는 접근제어자 public 역할을 한다.</p><p>이제 this가 길을 잃는 과정을 살펴본다.</p><p>@<a href="http://jsbin.com/vofeto/1/edit?js,console,output"></a></p>
 <h3 id="toc_19">다음</h3>
 
                         </div>
