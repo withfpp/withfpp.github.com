@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Fri, 05 Sep 2014 10:58:40 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Front-end JS 상식]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><p>자바스크립트 상식</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[codeJS]]></title><description><![CDATA[My development blog, I love Javascript]]></description><link>http://withfpp.github.com</link><image><url>http://withfpp.github.com/public/img/favorite.png</url><title>codeJS</title><link>http://withfpp.github.com</link></image><generator>RSS for Node</generator><lastBuildDate>Fri, 05 Sep 2014 11:00:53 GMT</lastBuildDate><atom:link href="http://withfpp.github.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Front-end JS 상식]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><p>프론트엔드 자바스크립트 상식을 정리해본다.
+기본이 중요! 천천히, 꼼꼼히 보는 것이 가장 빠른 결과를!</p>
 <h2 id="toc_20">이벤트 버블링</h2>
 
 <ul>
@@ -17,16 +18,14 @@
 <h6 id="toc_22">jQuery on 델리게이트 먼저 보자.</h6>
 <p>@<a href="http://jsbin.com/potaxi/1/edit?html,js,output"></a></p>
 <h6 id="toc_23">자바스크립트 델리게이트도 또 한번 더 보자.</h6>
-<p>@<a href="http://jsbin.com/guvev/1/edit?js,output"></a></p>
-<h2 id="toc_24">this in JS</h2>
-]]></description><link>http://withfpp.github.com/post/front-end-js-sangsig</link><guid isPermaLink="false">front-end-js-sangsig</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Fri, 05 Sep 2014 05:40:00 GMT</pubDate></item><item><title><![CDATA[실용적인 Javascript]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><p>문자열에서 단어 찾기</p><pre><code class="js">var test = <span class="string">"I am leon, I love JS"</span><span class="comment">;</span>
+<p>@<a href="http://jsbin.com/guvev/1/edit?js,output"></a></p>]]></description><link>http://withfpp.github.com/post/front-end-js-sangsig</link><guid isPermaLink="false">front-end-js-sangsig</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Fri, 05 Sep 2014 05:40:00 GMT</pubDate></item><item><title><![CDATA[실용적인 Javascript]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/36d40806a586b8ebc0970c759e6ffec4?r=pg&s=48.jpg&d=identicon"><br/><p>문자열에서 단어 찾기</p><pre><code class="js">var test = <span class="string">"I am leon, I love JS"</span><span class="comment">;</span>
 var target = <span class="string">"leon"</span><span class="comment">;</span>
 var iValue = test<span class="preprocessor">.indexOf</span>(target)<span class="comment">;</span>
 if(iValue !== -<span class="number">1</span>){
     console<span class="preprocessor">.log</span>(<span class="string">"exist!"</span>)<span class="comment">;</span>
 }
 </code></pre>
-<h3 id="toc_30">문자열에서 특정 부분 추출하기</h3>
+<h3 id="toc_29">문자열에서 특정 부분 추출하기</h3>
 <pre><code class="js">var sentence = <span class="string">"I am learning Javascript now : String, Array, Function, Prototype."</span><span class="comment">;</span>
 var start = sentence<span class="preprocessor">.indexOf</span>(<span class="string">":"</span>)<span class="comment">;</span>
 var end = sentence<span class="preprocessor">.indexOf</span>(<span class="string">"."</span>)<span class="comment">;</span>
@@ -34,21 +33,21 @@ var end = sentence<span class="preprocessor">.indexOf</span>(<span class="string
 var list = sentence<span class="preprocessor">.substr</span>(start + <span class="number">1</span>, end)<span class="comment">;</span>
 console<span class="preprocessor">.log</span>(list)<span class="comment">;</span>
 </code></pre>
-<h3 id="toc_31">키워드 문자열을</h3>
+<h3 id="toc_30">키워드 문자열을</h3>
 <p><iframe style="width:100%; height:300px" src="http://jsfiddle.net/xyxamc0e/embedded/js,resources,html,css,result/light/"></iframe></p>
-<h3 id="toc_32">배열에서 랜덤 아이템 가져오기</h3>
+<h3 id="toc_31">배열에서 랜덤 아이템 가져오기</h3>
 <pre><code class="js">var items = <span class="matrix">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'bar'</span>,<span class="string">'foo'</span>,<span class="number">999</span>]</span>;
 var ranNum = <span class="transposed_variable">Math.</span><span class="built_in">floor</span>(<span class="transposed_variable">Math.</span>random() * <span class="transposed_variable">items.</span><span class="built_in">length</span>);
 var ranItem = items<span class="matrix">[ranNum]</span>;
 <span class="transposed_variable">console.</span><span class="built_in">log</span>(ranItem);
 </code></pre>
-<h3 id="toc_33">특정 범위에서 랜덤 숫자 가져오기</h3>
+<h3 id="toc_32">특정 범위에서 랜덤 숫자 가져오기</h3>
 <pre><code class="js"><span class="built_in">var</span> <span class="keyword">max</span> <span class="subst">=</span> <span class="number">20</span>;
 <span class="built_in">var</span> <span class="keyword">min</span> <span class="subst">=</span> <span class="number">10</span>;
 <span class="built_in">var</span> ranNum <span class="subst">=</span> Math<span class="built_in">.</span>floor(Math<span class="built_in">.</span>random() <span class="subst">*</span> (<span class="keyword">max</span> <span class="subst">-</span> <span class="keyword">min</span> <span class="subst">+</span> <span class="number">1</span>)) <span class="subst">+</span> <span class="keyword">min</span>;
 console<span class="built_in">.</span><span class="keyword">log</span>(ranNum);
 </code></pre>
-<h3 id="toc_34">알파벳 숫자 랜덤 세트 만들기</h3>
+<h3 id="toc_33">알파벳 숫자 랜덤 세트 만들기</h3>
 <pre><code class="js"><span class="function"><span class="keyword">function</span> <span class="title">generateRandomAlphaNum</span><span class="params">(len)</span> {</span>
     var rdmstring = <span class="string">""</span>;
     <span class="keyword">for</span>( ; <span class="transposed_variable">rdmString.</span><span class="built_in">length</span> &lt; len; rdmString  += <span class="transposed_variable">Math.</span>random().toString(<span class="number">36</span>).substr(<span class="number">2</span>));
@@ -81,9 +80,9 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
 <li><a href="http://pineapple.io/resources/tagged/javascript?sort=most_favorited">http://pineapple.io/resources/tagged/javascript?sort=most_favorited</a></li>
 </ul>
 <p>자바스크립트를 큰 그림으로 한 번에 볼 수 있도록 정리해보고 싶었다. 위를 비롯해 여러가지 소스를 활용해 포스팅한다. 계속 업데이트 에정...</p>
-<h3 id="toc_58">탄탄한 기초를 위하여</h3>
+<h3 id="toc_57">탄탄한 기초를 위하여</h3>
 
-<h5 id="toc_59">1.프로토타입 이용하기</h5>
+<h5 id="toc_58">1.프로토타입 이용하기</h5>
 <p>프로토타입을 이용해서 메소드를 확장한다.</p>
 <ul>
 <li>prototype, String, for</li>
@@ -99,12 +98,12 @@ clear:both 에 대해 반드시 알아두어야 한다. </p>
 s = <span class="transposed_variable">s.</span>reversed();
 alert(s);
 </code></pre>
-<h5 id="toc_60">2.내장함수 이용하기</h5>
+<h5 id="toc_59">2.내장함수 이용하기</h5>
 <p>자바스크립트는 함수 안에 함수를 허용한다. 전역환경에 너무 많은 함수를 보관하지 않을 수 있어 유지면에서 깔끔하다. 내장함수는 부모함수의 변수들을 공유한다.</p>
 <ul>
 <li>parseInt()</li>
 </ul>
-]]></description><link>http://withfpp.github.com/post/jabaseukeuribteu-neombeo-javascript-number)</link><guid isPermaLink="false">jabaseukeuribteu-neombeo-javascript-number)</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Sat, 02 Aug 2014 13:14:00 GMT</pubDate></item><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_68">환영합니다.</h3>
+]]></description><link>http://withfpp.github.com/post/jabaseukeuribteu-neombeo-javascript-number)</link><guid isPermaLink="false">jabaseukeuribteu-neombeo-javascript-number)</guid><dc:creator><![CDATA[<a href="" target="_blank">Leon Taeho Kim</a>]]></dc:creator><pubDate>Sat, 02 Aug 2014 13:14:00 GMT</pubDate></item><item><title><![CDATA[Welcome to haroopress]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/a8618a255192bd842fdd62d099776735?r=pg&s=48.jpg&d=identicon"><br/><h3 id="toc_67">환영합니다.</h3>
 
 <ul>
 <li>Welcome</li>
@@ -118,9 +117,9 @@ alert(s);
 <li>добро пожаловать</li>
 </ul>
 
-<h3 id="toc_69">Intro</h3>
+<h3 id="toc_68">Intro</h3>
 <p>하루프레스는 하루의 이야기를 블로깅하기 위한 정적 페이지 블로그 엔진입니다.</p>
-<h3 id="toc_70">Haroopress?</h3>
+<h3 id="toc_69">Haroopress?</h3>
 
 <ul>
 <li><a href="http://haroopress.com/about/">하루프레스?</a></li>
@@ -129,7 +128,7 @@ alert(s);
 <li><a href="http://haroopress.com/diary">하루프레스 개발 다이어리</a></li>
 </ul>
 
-<h3 id="toc_71">Usage</h3>
+<h3 id="toc_70">Usage</h3>
 
 <ul>
 <li><a href="http://haroopress.com/post/haroopress-install-guide-movie/">5분만에 설치하는 하루프레스 동영상</a></li>
@@ -140,7 +139,7 @@ alert(s);
 <li><a href="http://haroopress.com/post/harupeureseu-hwangyeongseoljeong-hagi/">하루프레스 환경설정 하기</a></li>
 </ul>
 
-<h3 id="toc_72">History</h3>
+<h3 id="toc_71">History</h3>
 
 <ul>
 <li><a href="https://github.com/rhiokim/haroopress/wiki/Change-History">변경 이력</a></li>

@@ -184,7 +184,7 @@ if(iValue !== -<span class="number">1</span>){
     console<span class="preprocessor">.log</span>(<span class="string">"exist!"</span>)<span class="comment">;</span>
 }
 </code></pre>
-<h3 id="toc_25">문자열에서 특정 부분 추출하기</h3>
+<h3 id="toc_24">문자열에서 특정 부분 추출하기</h3>
 <pre><code class="js">var sentence = <span class="string">"I am learning Javascript now : String, Array, Function, Prototype."</span><span class="comment">;</span>
 var start = sentence<span class="preprocessor">.indexOf</span>(<span class="string">":"</span>)<span class="comment">;</span>
 var end = sentence<span class="preprocessor">.indexOf</span>(<span class="string">"."</span>)<span class="comment">;</span>
@@ -192,21 +192,21 @@ var end = sentence<span class="preprocessor">.indexOf</span>(<span class="string
 var list = sentence<span class="preprocessor">.substr</span>(start + <span class="number">1</span>, end)<span class="comment">;</span>
 console<span class="preprocessor">.log</span>(list)<span class="comment">;</span>
 </code></pre>
-<h3 id="toc_26">키워드 문자열을</h3>
+<h3 id="toc_25">키워드 문자열을</h3>
 <p><iframe style="width:100%; height:300px" src="http://jsfiddle.net/xyxamc0e/embedded/js,resources,html,css,result/light/"></iframe></p>
-<h3 id="toc_27">배열에서 랜덤 아이템 가져오기</h3>
+<h3 id="toc_26">배열에서 랜덤 아이템 가져오기</h3>
 <pre><code class="js">var items = <span class="matrix">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'bar'</span>,<span class="string">'foo'</span>,<span class="number">999</span>]</span>;
 var ranNum = <span class="transposed_variable">Math.</span><span class="built_in">floor</span>(<span class="transposed_variable">Math.</span>random() * <span class="transposed_variable">items.</span><span class="built_in">length</span>);
 var ranItem = items<span class="matrix">[ranNum]</span>;
 <span class="transposed_variable">console.</span><span class="built_in">log</span>(ranItem);
 </code></pre>
-<h3 id="toc_28">특정 범위에서 랜덤 숫자 가져오기</h3>
+<h3 id="toc_27">특정 범위에서 랜덤 숫자 가져오기</h3>
 <pre><code class="js"><span class="built_in">var</span> <span class="keyword">max</span> <span class="subst">=</span> <span class="number">20</span>;
 <span class="built_in">var</span> <span class="keyword">min</span> <span class="subst">=</span> <span class="number">10</span>;
 <span class="built_in">var</span> ranNum <span class="subst">=</span> Math<span class="built_in">.</span>floor(Math<span class="built_in">.</span>random() <span class="subst">*</span> (<span class="keyword">max</span> <span class="subst">-</span> <span class="keyword">min</span> <span class="subst">+</span> <span class="number">1</span>)) <span class="subst">+</span> <span class="keyword">min</span>;
 console<span class="built_in">.</span><span class="keyword">log</span>(ranNum);
 </code></pre>
-<h3 id="toc_29">알파벳 숫자 랜덤 세트 만들기</h3>
+<h3 id="toc_28">알파벳 숫자 랜덤 세트 만들기</h3>
 <pre><code class="js"><span class="function"><span class="keyword">function</span> <span class="title">generateRandomAlphaNum</span><span class="params">(len)</span> {</span>
     var rdmstring = <span class="string">""</span>;
     <span class="keyword">for</span>( ; <span class="transposed_variable">rdmString.</span><span class="built_in">length</span> &lt; len; rdmString  += <span class="transposed_variable">Math.</span>random().toString(<span class="number">36</span>).substr(<span class="number">2</span>));
