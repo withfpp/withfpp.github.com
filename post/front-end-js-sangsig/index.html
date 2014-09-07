@@ -198,7 +198,8 @@
 <h6 id="toc_16">자바스크립트 델리게이트도 또 한번 더 보자.</h6>
 <p>@<a href="http://jsbin.com/guvev/1/edit?js,output"></a></p>
 <h2 id="toc_17">this in JS</h2>
-<p>이 부분은 <a href="http://codeflow.co.kr/question/956/javascript-%EC%9D%98-this-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">http://codeflow.co.kr/question/956/javascript-%EC%9D%98-this-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/</a> 에서 발췌하였다. 매우 좋은 글이므로 원문을 참조하십시오.(저는 개인적으로 쉽게 보기위해 발췌합니다.)</p><p>모든 프로그래밍 언어에는, 현재 scope 와 현재 context 라는 개념이 있다. 자바스크립트에는 ==lexical scope== 과 ==this== 라는 context 가 있다.</p><p>자바스크립트에서는 모든 새로운 scope 들은 function 의 정의로 인해 생성된다. 하지만 C 같은 언어와는 다르게, 이것이 scope 를 만드는 유일한 방법이다. 반복문도, if 문도, {} 블락 도 scope 를 만들지 않는다. 이런 단순함은 축복임과 동시에 저주다. </p>
+<p>이 부분은 <a href="http://codeflow.co.kr/question/956/javascript-%EC%9D%98-this-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/">http://codeflow.co.kr/question/956/javascript-%EC%9D%98-this-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80/</a> 에서 발췌하였다. 매우 좋은 글이므로 원문을 참조하십시오.(저는 개인적으로 쉽게 보기위해 발췌합니다.)
+<a href="http://www.nextree.co.kr/p7522/">http://www.nextree.co.kr/p7522/</a> 이 블로그의 글도 매우 간결하며 잘 쓰여져 있는 훌륭한 글입니다.</p><p>모든 프로그래밍 언어에는, 현재 scope 와 현재 context 라는 개념이 있다. 자바스크립트에는 ==lexical scope== 과 ==this== 라는 context 가 있다.</p><p>자바스크립트에서는 모든 새로운 scope 들은 function 의 정의로 인해 생성된다. 하지만 C 같은 언어와는 다르게, 이것이 scope 를 만드는 유일한 방법이다. 반복문도, if 문도, {} 블락 도 scope 를 만들지 않는다. 이런 단순함은 축복임과 동시에 저주다. </p>
 <h3 id="toc_18">핵심</h3>
 <p>자바스크립트에서 scope 을 이해하려면 다음을 이해해야 한다:</p>
 <ul>
@@ -217,9 +218,28 @@
 3. 생성자 함수 코드 내부의 this는 새로 생성된 객체를 참조한다.
 4. call()과 apply() 메소드로 함수를 호출할 때, 함수의 this는 첫 번째 인자로 넘겨받은 객체를 참조한다.
 5. 프로토타입 객체 메소드 내부의 this도 해당 메소드를 호출한 부모 객체를 참조한다.
-6. JavaScript의 this 키워드는 접근제어자 public 역할을 한다.</p><p>이제 this가 길을 잃는 과정을 살펴본다.</p><p>@<a href="http://jsbin.com/vofeto/1/edit?js,console,output"></a></p>
-<h3 id="toc_19">다음</h3>
-<p>ss</p>
+6. JavaScript의 this 키워드는 접근제어자 public 역할을 한다.</p><p>이제 this가 길을 잃는 과정을 살펴본다.</p><p>@<a href="http://jsbin.com/vofeto/1/edit?js,console,output"></a></p><p>that으로 문제해결하기</p><p>@<a href="http://jsbin.com/vupew/1/edit?js,console"></a></p>
+<h3 id="toc_19">즉시실행함수의 이해</h3>
+<p>즉시실행함수는 전역 환경의 네임스페이스에 변수를 추가하지 않아도 되기 때문에 코드 충돌을 피할 수 있다. 플러그인이나 라이브러리 등을 구현할 때 자주 사용된다.</p><p>@<a href="http://jsbin.com/yobob/1/edit?js,console"></a></p><p>아래 코드는 function literal 과 immediate function 을 비교한다.
+즉시 실행 함수는 함수를 괄호로 감쌌다는 것만 다르다. 생긴 모양이 복잡해 보이지만 기명 함수 호출과 똑같은 방법이다.</p><pre><code class="js"><span class="keyword">var</span> buyFood = <span class="function"><span class="keyword">function</span><span class="params">(food)</span><span class="comment">{
+  console.log('food: ' + food);
+}</span>
+
+<span class="title">buyFood</span><span class="params">(<span class="string">'Banana'</span>)</span>;</span>  <span class="comment">//food: Banana</span>
+
+(<span class="function"><span class="keyword">function</span><span class="params">(food)</span><span class="comment">{
+  console.log('food: ' + food)
+}</span>)<span class="params">(<span class="string">'Mango'</span>)</span>;</span>  <span class="comment">// food: Mango</span>
+
+</code></pre>
+<h3 id="toc_20">bind 함수의 이해</h3>
+<p>@<a href="http://jsbin.com/nijize/1/edit?html,js,console,output"></a></p>
+<h3 id="toc_21">네임스페이스의 기본 이해</h3>
+<p>네임 스페이스를 만드는 기본은 싱글 글로벌 오브젝트를 만드는 것이다. 보통 이것은 wrapper 라고 불린다.</p><p>중첩 네임스페이스 만들기는 보통 모듈 패턴에서 자주 쓰인다. 중첩된 네임 스페이스는 코드를 더 보호하고, 정돈되도록 만든다. 또한 변수들의 이름을 직관적으로 사용할 수 있도록 돕는다.</p>
+<h5 id="toc_22">즉시 호출 함수 모듈화로 private 콘텐츠 만들어보기</h5>
+<p>@<a href="http://jsbin.com/yayad/1/edit?js,console"></a></p>
+<h5 id="toc_23">Augmentation - 기존 모듈에 새로운 메소드 추가하기</h5>
+<p>@<a href="http://jsbin.com/tatix/1/edit?html,js,console,output"></a></p>
                         </div>
                         <hr />
                                             
